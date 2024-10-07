@@ -1,0 +1,569 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="635.9999999999999,5194" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="code" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_data" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[dt_data]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="570,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="D:\gdg\google_form.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="570,5051.333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,4860.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="count" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Gen AI Study Jams 2024 Student Enrolment Form" sap:VirtualizedContainerService.HintSize="502,4800.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,4558.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Text="21am1a0559@svrec.ac.in" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/viewform" CVScreenId="c900a8bb-ad0c-41c8-9841-01635d8df931" CvElementArea="462, 797, 498, 55" CvType="InputBox" DesignTimeRectangle="471, 807, 487, 40" DesignTimeScaleFactor="1.649999976158142" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="c42b96cb-269a-48a4-a2ed-964d18cb2263" InformativeScreenshot="e4cf13424826416724733f6835589735.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="c900a8bb-ad0c-41c8-9841-01635d8df931" CvTextArea="470, 725, 64, 24" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="471, 718, 63, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email' tag='SPAN' type='' class='M7eMe' check:innerText='Email' /&gt;" Guid="f065c4cd-2c93-4670-9288-6abc53bb61a5" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="b5b7fe69-4854-4b65-b900-09301e0ef16a" CvElementArea="425, 842, 141, 69" CvTextArea="468, 864, 54, 21" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="431, 846, 131, 59" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='l4V7wb Fxmcue' aaname='' check:innerText='Next' /&gt;" Guid="e4ea052b-e918-4b60-ab16-f340d9b1dd3b" InformativeScreenshot="1fb199aded09f475a9007ab5bbb84eca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I accept the terms'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="45de8a1f-d753-4817-9c81-3bd41d460e3d" CvElementArea="466, 633, 41, 41" CvType="RadioButton" DesignTimeRectangle="471, 637, 33, 33" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' parentid='i9' tag='DIV' class='AB7Lab Id5V1' aaname='' /&gt;" Guid="d74694e9-8860-433f-a3cf-ab1305c3d88c" InformativeScreenshot="fcaa51e64bfcc9deea45b340aeb4787d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="45de8a1f-d753-4817-9c81-3bd41d460e3d" CvTextArea="522, 641, 249, 24" CvTextArgument="Yes, I accept the terms" CvType="Text" DesignTimeRectangle="524, 635, 246, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Yes, I accept the terms' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' check:innerText='Yes, I accept the terms' /&gt;" Guid="8076574c-9790-4d43-b1ec-2e3be24c9b85" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="771d25d9-1e3b-4e2e-b10c-0e7da524f735" CvElementArea="581, 841, 140, 70" CvTextArea="624, 863, 54, 21" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="587, 845, 131, 60" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Next' /&gt;" Guid="a4e26188-b0a6-4c30-a485-041ed5f1c96c" InformativeScreenshot="af630f5eef596a20ce73d76b43700ac7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your Full Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Text="[row(0).ToString]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="ed23b712-9e58-4885-bc8b-083151944627" CvElementArea="465, 586, 495, 50" CvType="InputBox" DesignTimeRectangle="471, 593, 487, 39" DesignTimeScaleFactor="1.649999976158142" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="af45ed80-7a75-4aff-97c3-ff045b092435" InformativeScreenshot="c9713a969ba9c55b9eac86a59d234645.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="ed23b712-9e58-4885-bc8b-083151944627" CvTextArea="468, 510, 179, 24" CvTextArgument="Your Full Name" CvType="Text" DesignTimeRectangle="471, 504, 175, 39" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' type='' class='M7eMe' aaname='Your Full Name' check:innerText='Your Full Name' /&gt;" Guid="c23f71a8-c8f8-44b5-b1eb-6185e0a1e2e6" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DelayBefore="1.5" DisplayName="Select Item 'Gender'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[row(1).ToString]" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="5">
+                          <x:String>Choose</x:String>
+                          <x:String>Female</x:String>
+                          <x:String>Male</x:String>
+                          <x:String>Non-Binary / Third Gender</x:String>
+                          <x:String>Prefer not to say</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="39542bf1-2152-4cc3-b346-502111d388e6" CvElementArea="468, 879, 398, 87" CvType="InputBox" DesignTimeRectangle="472, 883, 391, 79" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='DIV' type='' class='' aaname='' check:innerText='Choose&amp;#xA;Female&amp;#xA;Male&amp;#xA;Non-Binary / Third Gender&amp;#xA;Prefer not to say' /&gt;" Guid="849adcff-1484-4870-b847-b81c1fc9ca45" InformativeScreenshot="09c631fa8a834818c195ab6e5802e527.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="39542bf1-2152-4cc3-b346-502111d388e6" CvTextArea="468, 809, 94, 24" CvTextArgument="Gender" CvType="Text" DesignTimeRectangle="471, 803, 91, 39" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' type='' class='M7eMe' aaname='Gender' check:innerText='Gender' /&gt;" Guid="de1e4eec-249e-4372-b1f1-2c175e77d3f9" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NSelectItem DelayBefore="1.9" DisplayName="Select Item 'SVR Engineering College…'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="SVR Engineering College - Nandyala, India" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>Choose</x:String>
+                          <x:String>MGM's Jawaharlal Nehru Engineering College - Aurangabad, India</x:String>
+                          <x:String>SIES Graduate School of Technology - Navi Mumbai, India</x:String>
+                          <x:String>Pimpri Chinchwad College of Engineering - Pune, India</x:String>
+                          <x:String>Hooghly Engineering &amp; Technology College - Chinsurah, India</x:String>
+                          <x:String>SR Group of Institutions - Jhansi, India</x:String>
+                          <x:String>Lakshmi Narain College of Technology and Science (LNCTS) - Bhopal, India</x:String>
+                          <x:String>Dr. B.C. Roy Engineering College - Durgapur, India</x:String>
+                          <x:String>Arka Jain University - Jamshedpur, India</x:String>
+                          <x:String>University of Petroleum and Energy Studies - Dehradun, India</x:String>
+                          <x:String>Jamia Millia Islamia - Delhi, India</x:String>
+                          <x:String>National Institute of Technology - Calicut, India</x:String>
+                          <x:String>Karunya Institute of Technology &amp; Sciences - Coimbatore, India</x:String>
+                          <x:String>Muzaffarpur Institute of Technology - Muzaffarpur, India</x:String>
+                          <x:String>Panimalar Engineering College - Chennai, India</x:String>
+                          <x:String>RV University - Bengaluru, India</x:String>
+                          <x:String>Jawaharlal Nehru University - Delhi, India</x:String>
+                          <x:String>Indian Institute of Information Technology - Lucknow, India</x:String>
+                          <x:String>JSS Academy of Technical Education - Noida, India</x:String>
+                          <x:String>Dayananda Sagar University - Bengaluru, India</x:String>
+                          <x:String>Annasaheb Dange College of Engineering and Technology - Ashta, India</x:String>
+                          <x:String>SIES College of Arts Science &amp; Commerce - Mumbai, India</x:String>
+                          <x:String>Vignan's Institute of Information Technology - Visakhapatnam, India</x:String>
+                          <x:String>Dr. J.J. Magdum College of Engineering - Jaysingpur, India</x:String>
+                          <x:String>Gokaraju Rangaraju Institute of Engineering &amp; Technology - Hyderabad, India</x:String>
+                          <x:String>Gayatri Vidya Parishad College of Engineering for Women - Visakhapatnam, India</x:String>
+                          <x:String>Institute of Technical Education &amp; Research - Bhubaneswar, India</x:String>
+                          <x:String>Indian Institute of Technology - Indore, India</x:String>
+                          <x:String>Veer Bahadur Singh Purvanchal University - Jaunpur, India</x:String>
+                          <x:String>University College of Engineering - Hyderabad, India</x:String>
+                          <x:String>Acharya Narendra Dev College - Delhi, India</x:String>
+                          <x:String>CMR Institute of Technology - Hyderabad, India</x:String>
+                          <x:String>Indian Institute of Technology - Kanpur, India</x:String>
+                          <x:String>Malla Reddy University - Hyderabad, India</x:String>
+                          <x:String>Atria Institute of Technology - Bengaluru, India</x:String>
+                          <x:String>Bangalore Institute of Technology - Bengaluru, India</x:String>
+                          <x:String>D.Y. Patil College of Engineering - Pune, India</x:String>
+                          <x:String>SVR Engineering College - Nandyala, India</x:String>
+                          <x:String>V.V.P. Engineering College - Rajkot, India</x:String>
+                          <x:String>Government College of Engineering &amp; Textile Technology - Berhampore, India</x:String>
+                          <x:String>Aditya College of Engineering - East Godavari, India</x:String>
+                          <x:String>International Institute of Information Technology - Bangalore, India</x:String>
+                          <x:String>Guru Ghasidas Vishwavidyalaya - Bilaspur, India</x:String>
+                          <x:String>Meerut Institute of Engineering and Technology - Meerut, India</x:String>
+                          <x:String>National Institute of Technology - Rourkela, India</x:String>
+                          <x:String>Sinhgad College of Engineering - Pune, India</x:String>
+                          <x:String>Gyan Ganga Institute of Technology and Science - Jabalpur, India</x:String>
+                          <x:String>Atal Bihari Vajpayee Indian Institute of Information Technology and Management - Gwalior, India</x:String>
+                          <x:String>Central Institute of Technology - Kokrajhar, India</x:String>
+                          <x:String>Babu Banarasi Das Northern India Institute of Technology - Lucknow, India</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="28ae7253-02fe-4e41-a243-2a919b7ba040" CvElementArea="465, 547, 987, 86" CvType="InputBox" DesignTimeRectangle="498, 563, 870, 53" DesignTimeScaleFactor="1.649999976158142" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='vRMGwf oJeWuf' tag='SPAN' aaname='SVR Engineering College - Nandyala, India' check:innerText='SVR Engineering College - Nandyala, India' /&gt;" Guid="af5a5304-f608-4a20-a955-8adf01081ca8" InformativeScreenshot="e7bc8d18061461a37da57de9d24b6270.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="28ae7253-02fe-4e41-a243-2a919b7ba040" CvTextArea="468, 476, 334, 25" CvTextArgument="Select your institution name" CvType="Text" DesignTimeRectangle="471, 470, 332, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' type='' class='M7eMe' aaname='Select your institution name' check:innerText='Select your institution name' /&gt;" Guid="67e97ec7-421f-422d-8c7e-a70f4df130d8" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'unique referral code'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Text="EKU97X" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="7cf53c22-3171-4a84-b979-6d6ff22d513d" CvElementArea="464, 696, 498, 51" CvType="InputBox" DesignTimeRectangle="471, 703, 487, 39" DesignTimeScaleFactor="1.649999976158142" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i17' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="bbbfe67c-7ed3-4594-9e7f-12a90f614dda" InformativeScreenshot="98cdf43300c733e109d4002766d94f04.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="7cf53c22-3171-4a84-b979-6d6ff22d513d" CvTextArea="1041, 587, 243, 27" CvTextArgument="unique referral code." CvType="Text" DesignTimeRectangle="1043, 584, 235, 30" FuzzySelectorArgument="&lt;webctrl type='' parentid='i18' tag='B' class='' aaname='unique referral code' check:innerText='unique referral code' /&gt;" Guid="0fbc3021-1cfe-42b0-83de-caf21b1feb75" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NSelectItem DisplayName="Select Item 'Year of Graduation'" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[row(2).ToString]" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="5">
+                          <x:String>Choose</x:String>
+                          <x:String>2025</x:String>
+                          <x:String>2026</x:String>
+                          <x:String>2027</x:String>
+                          <x:String>2028 and later</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="6ddb8c5d-00cb-4a7d-a083-911beef76e9e" CvElementArea="467, 356, 298, 88" CvType="InputBox" DesignTimeRectangle="472, 360, 290, 79" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' type='' class='' tag='DIV' aaname='' check:innerText='Choose&amp;#xA;2025&amp;#xA;2026&amp;#xA;2027&amp;#xA;2028 and later' /&gt;" Guid="d45dd0ee-9c49-4e83-bc89-c5ac2ad65bf4" InformativeScreenshot="f26c0a09f34bc2196c8b7efd5b7a4004.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="6ddb8c5d-00cb-4a7d-a083-911beef76e9e" CvTextArea="468, 287, 225, 24" CvTextArgument="Year of Graduation" CvType="Text" DesignTimeRectangle="471, 280, 223, 40" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i21' tag='SPAN' type='' class='M7eMe' aaname='Year of Graduation' check:innerText='Year of Graduation' /&gt;" Guid="837443c4-1e04-4ad2-85b5-2e345559eccc" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'chrome browser?'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="383325d5-b563-44d6-bfee-68ac981aac63" CvElementArea="466, 666, 41, 41" CvType="RadioButton" DesignTimeRectangle="471, 666, 90, 40" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' parentid='i29' tag='DIV' class='AB7Lab Id5V1' aaname='' /&gt;" Guid="a00f509f-9091-46bd-a193-111411847c17" InformativeScreenshot="b98ba68cf5a7d00058c859f073ea2eca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="383325d5-b563-44d6-bfee-68ac981aac63" CvTextArea="468, 593, 211, 24" CvTextArgument="chrome browser?" CvType="Text" DesignTimeRectangle="468, 592, 211, 26" ElementType="Text" Guid="a9f81dd8-96a1-43ca-b060-b27b374a1800" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="e8dc6955-5ede-4e7d-ac2c-241c6ff68bc2" CvElementArea="581, 841, 141, 70" CvTextArea="624, 863, 54, 21" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="587, 845, 131, 60" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Next' /&gt;" Guid="0597a6dd-82eb-4d68-a879-ea1ccda3f150" InformativeScreenshot="71367b570e118e562be6b92a7599157b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I verify'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="98d0da2d-bb66-48d7-95db-4035d442ad23" CvElementArea="467, 471, 40, 40" CvType="RadioButton" DesignTimeRectangle="471, 474, 33, 33" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' parentid='i9' tag='DIV' class='AB7Lab Id5V1' aaname='' /&gt;" Guid="14d03f38-e724-4fcd-8e61-8dbe060e68e4" InformativeScreenshot="0bcb6747516cfc058b6a99f1fe5ac2e0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="98d0da2d-bb66-48d7-95db-4035d442ad23" CvTextArea="522, 479, 76, 27" CvTextArgument="I verify" CvType="Text" DesignTimeRectangle="524, 473, 74, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I verify' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' check:innerText='I verify' /&gt;" Guid="99b97576-7054-4e04-809b-24a100f7f770" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'double check the email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Text="[row(3).ToString]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="e6820af2-a205-4f91-a58b-b3469bfe17e7" CvElementArea="462, 799, 499, 53" CvType="InputBox" DesignTimeRectangle="471, 807, 487, 40" DesignTimeScaleFactor="1.649999976158142" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b21abf87-5d61-417c-96db-2762dc7f2261" InformativeScreenshot="d275bfabbef4e758ff6bde42e0b6ec76.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="e6820af2-a205-4f91-a58b-b3469bfe17e7" CvTextArea="615, 656, 270, 21" CvTextArgument="double check the email" CvType="Text" DesignTimeRectangle="617, 652, 268, 30" FuzzySelectorArgument="&lt;webctrl parentid='i13' tag='B' type='' class='' aaname='double check the email' check:innerText='double check the email' /&gt;" Guid="aef926c1-6847-4ec2-ac8e-8ef9a077cd4b" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="76e9ee65-2a7e-4de8-933a-0de0c1fd1cac" CvElementArea="581, 942, 140, 68" CvTextArea="626, 965, 52, 21" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="587, 946, 131, 59" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Next' /&gt;" Guid="d4904d78-8b2c-4314-ab3a-70174b8f7442" InformativeScreenshot="6ab6493410938cb5ecd8b840f56363cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your answer'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Text="[row(4).ToString]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="325170ac-4a25-4d67-b5c3-27ba969e3359" CvElementArea="463, 763, 985, 52" CvType="InputBox" DesignTimeRectangle="471, 773, 975, 39" DesignTimeScaleFactor="1.649999976158142" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='url' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="1aba61ee-cafe-4aee-9d18-50e6ddb7b80b" InformativeScreenshot="6808300b11bcf7615a4485d58a0eb7ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="325170ac-4a25-4d67-b5c3-27ba969e3359" CvElementArea="463, 763, 985, 52" CvType="InputBox" DesignTimeRectangle="471, 776, 131, 33" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Your answer' tag='DIV' type='' class='ndJi5d snByac' check:innerText='Your answer' /&gt;" Guid="8afe95c8-5713-406f-b96e-36e3908ed35c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I Acknowledge'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="55106a73-636d-4cda-a3b7-74aaba856a8c" CvElementArea="467, 432, 40, 41" CvType="RadioButton" DesignTimeRectangle="471, 435, 33, 33" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' parentid='i13' tag='DIV' class='vd3tt' aaname='' /&gt;" Guid="c4d42320-3139-4fab-ba36-5f0ca8bf05b6" InformativeScreenshot="be11a1eea1f1476bc86b94c68709caa9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="55106a73-636d-4cda-a3b7-74aaba856a8c" CvTextArea="527, 440, 157, 27" CvTextArgument="Acknowledge" CvType="Text" DesignTimeRectangle="524, 433, 160, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='I Acknowledge' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' check:innerText='I Acknowledge' /&gt;" Guid="ce04cb6c-ce60-4b9a-bec1-64c41f436575" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes, I Agree'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="55106a73-636d-4cda-a3b7-74aaba856a8c" CvElementArea="466, 744, 41, 41" CvType="RadioButton" DesignTimeRectangle="471, 747, 33, 33" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' parentid='i20' tag='DIV' class='AB7Lab Id5V1' aaname='' /&gt;" Guid="4b4f0893-7342-4e54-ba0f-6ab245a3c03a" InformativeScreenshot="6463038e6259e89fe2f2c85788b41691.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="55106a73-636d-4cda-a3b7-74aaba856a8c" CvTextArea="522, 752, 127, 27" CvTextArgument="Yes, I Agree" CvType="Text" DesignTimeRectangle="524, 745, 125, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Yes, I Agree' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' check:innerText='Yes, I Agree' /&gt;" Guid="3710737f-a95f-4cfc-bdb8-eca087be560d" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="434,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9cb32b6e-3d25-46db-8177-a3a752399b0f" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/formResponse" CVScreenId="f428bc2e-5b94-40fc-8be5-d9640e2f11ab" CvElementArea="584, 874, 161, 64" CvTextArea="623, 893, 82, 24" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="587, 876, 157, 59" DesignTimeScaleFactor="1.649999976158142" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Submit' /&gt;" Guid="8c626c4e-df63-41ba-a68e-414ba991ad2d" InformativeScreenshot="e4ba797e54df271ca77d5058e85a0551.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[count+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="31dbece25323f1be9c3f12de8954f9db.jpg" Selector="&lt;html app='chrome.exe' title='Gen AI Study Jams 2024 Student Enrolment Form' /&gt;" Title="Gen AI Study Jams 2024 Student Enrolment Form" Url="https://docs.google.com/forms/d/e/1FAIpQLSf2Hiod0Hmmo74st5mx9DnjRdHCCPJaa0v2POFtnHYsraR2BA/viewform" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
